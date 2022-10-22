@@ -19,7 +19,7 @@
 
 #### Query Strategy 1: ReGroup
 
-$$x^* := highest\: probability\: case\: with\: positive\: true\: class\: as\: picked\: up\: by\: user\: (oracle)\: interactively\:$$
+$x^* :=$ highest probability case with positive true class as picked up by user (oracle) interactively
 
 Caveat: Unlearnable Groups - instances' probability are discounted based on how many times they are skipped (not picked up by human).
 
@@ -34,7 +34,7 @@ $v =$ unlearnable_group_discount_factor
 
 #### Query Strategy 2: Uncertainity Based Query Sampling (UBQS)
 
-$$x^* := instance\: which \: the\: algorithm\: is\: least\: confident\: about\: OR\: is\: most\: likely\: to\: mislabel$$
+$x^* :=$ instance which the algorithm is least confident about OR is most likely to mislabel
 
 In binary classification tasks, UBQS (**where uncertainty is defined by entropy**) simply queries the instance whose posterior probability of being positive is nearest 0.5
 
