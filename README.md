@@ -60,6 +60,12 @@ where
 - For our implementation, we use 
 - Parameter $\beta$ is controls the relative importance of the density term
 
+---
+
+### Performance Analysis
+
+![Performance Analysis for different query strategies](performance_comparison.png)
+
 ### References 
 Burr Settles. Active Learning Literature Survey. Computer Sciences Tech-
 nical Report 1648, University of Wisconsin–Madison. 2009.
