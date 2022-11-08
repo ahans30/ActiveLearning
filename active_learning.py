@@ -70,7 +70,7 @@ class ActiveLearner(object):
                 optimal_query = np.abs(pred_prob_vector - 0.5).argmin()
                 
             elif strategy == 'information_density':
-                optimal_query = (np.abs(pred_prob_vector - 0.5) * (avg_disimilarity_vector ** 1)).argmin()
+                optimal_query = (np.abs(pred_prob_vector - 0.5) * (avg_disimilarity_vector ** self.hyperparameters['beta'])).argmin()
                 
             elif strategy == 'passive_learning':
                 if n == 0:
